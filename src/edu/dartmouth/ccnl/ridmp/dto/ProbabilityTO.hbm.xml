@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+        >
+    <class
+            name="edu.dartmouth.ccnl.ridmp.dto.ProbabilityTO"
+            table="probability"
+            dynamic-update="true"
+            dynamic-insert="true"
+            >
+
+        <id
+                name="probabilityId"
+                type="java.lang.Integer"
+                column="probabilityId"
+                >
+
+            <generator class="increment">
+            </generator>
+        </id>
+
+
+        <property
+                name="probabilityRewardOrientation"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="probabilityRewardOrientation"
+                />
+
+        <property
+                name="probabilityRewardSF"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="probabilityRewardSF"
+                />
+    </class>
+
+</hibernate-mapping>

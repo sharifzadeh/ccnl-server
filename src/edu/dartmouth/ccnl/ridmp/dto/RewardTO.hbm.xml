@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+        >
+    <class
+            name="edu.dartmouth.ccnl.ridmp.dto.RewardTO"
+            table="reward"
+            dynamic-update="true"
+            dynamic-insert="true"
+            >
+
+        <id
+                name="rewardId"
+                type="java.lang.Integer"
+                column="rewardId"
+                >
+
+            <generator class="increment">
+            </generator>
+        </id>
+
+
+        <property
+                name="rewardName"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="rewardName"
+                />
+
+        <property
+                name="rewardType"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="rewardType"
+                />
+    </class>
+
+</hibernate-mapping>

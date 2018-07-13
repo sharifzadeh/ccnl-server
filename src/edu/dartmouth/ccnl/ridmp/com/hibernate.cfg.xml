@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration
+        PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/test</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">spring</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+
+        <property name="dialect">net.sf.hibernate.dialect.MySQLDialect</property>
+
+
+        <!-- property name="transaction.factory_class">net.sf.hibernate.transaction.JDBCTransactionFactory</property>
+      <property name="hibernate.transaction.manager_lookup_class">net.sf.hibernate.transaction.OrionTransactionManagerLookup</property>
+      <property name="jta.UserTransaction">java:comp/UserTransaction</property -->
+
+
+        <property name="show_sql">true</property>
+        <property name="use_outer_join">true</property>
+        <property name="hibernate.cglib.use_reflection_optimizer">false</property>
+
+
+        <mapping resource="edu/dartmouth/ccnl/ridmp/dto/ProfileDTO.hbm.xml"/>
+        <mapping resource="edu/dartmouth/ccnl/ridmp/dto/ShapeTO.hbm.xml"/>
+        <mapping resource="edu/dartmouth/ccnl/ridmp/dto/PersonTO.hbm.xml"/>
+        <mapping resource="edu/dartmouth/ccnl/ridmp/dto/RewardTO.hbm.xml"/>
+        <mapping resource="edu/dartmouth/ccnl/ridmp/dto/ProbabilityTO.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>

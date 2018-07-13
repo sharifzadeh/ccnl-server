@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Transfer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.example.org transfer.xsd"
+          xmlns="http://www.example.org">
+          <!-- service name="Transfer" url = "" ip = "" user = "" password="" pathfiles="" threadtime="" openofficeonrun="true"/>
+          <service name="Incoming" url = "" ip = "" user = "" password="" pathfiles="" threadtime="" openofficeonrun=""/ -->
+          </Transfer>

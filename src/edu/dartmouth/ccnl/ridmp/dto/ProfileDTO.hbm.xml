@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+        >
+    <class
+            name="edu.dartmouth.ccnl.ridmp.dto.ProfileDTO"
+            table="profile"
+            dynamic-update="true"
+            dynamic-insert="true"
+            >
+
+        <id
+                name="profileId"
+                type="java.lang.Integer"
+                column="profileId"
+                >
+
+            <generator class="increment">
+            </generator>
+        </id>
+
+
+        <property
+                name="name"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="name"
+                />
+
+        <property
+                name="lastName"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="lastName"
+                />
+
+        <property
+                name="emailAddress"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="emailAddress"
+                />
+
+        <property
+                name="confKey"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="confKey"
+                />
+
+        <property
+                name="did"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="did"
+                />
+
+        <property
+                name="localAddress"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="localAddress"
+                />
+
+        <property
+                name="phoneNumber"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="phoneNumber"
+                />
+        <property
+                name="levelType"
+                type="java.lang.Integer"
+                update="true"
+                insert="true"
+                column="levelType"
+                />
+
+        <property
+                name="gender"
+                type="java.lang.Integer"
+                update="true"
+                insert="true"
+                column="gender"
+                />
+    </class>
+
+</hibernate-mapping>

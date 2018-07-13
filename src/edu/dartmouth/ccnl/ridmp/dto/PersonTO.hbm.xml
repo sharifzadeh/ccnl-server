@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping
+        >
+    <class
+            name="edu.dartmouth.ccnl.ridmp.dto.PersonTO"
+            table="person"
+            dynamic-update="true"
+            dynamic-insert="true"
+            >
+
+        <id
+                name="perId"
+                type="java.lang.Integer"
+                column="perId"
+                >
+
+            <generator class="increment">
+            </generator>
+        </id>
+
+
+        <property
+                name="firstName"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="firstName"
+                />
+
+        <property
+                name="lastName"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="lastName"
+                />
+
+        <property
+                name="dId"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="dId"
+                />
+
+        <property
+                name="email"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="email"
+                />
+
+        <property
+                name="ticket"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="ticket"
+                />
+
+        <property
+                name="shapeId"
+                type="java.lang.Integer"
+                update="false"
+                insert="false"
+                column="shapeId"
+                />
+        <many-to-one name="shapeTO"
+                     class="edu.dartmouth.ccnl.ridmp.dto.ShapeTO"
+                     insert="true"
+                     update="true"
+                     column="shapeId"
+                />
+
+        <property
+                name="probabilityId"
+                type="java.lang.Integer"
+                update="false"
+                insert="false"
+                column="probabilityId"
+                />
+        <many-to-one name="probabilityTO"
+                     class="edu.dartmouth.ccnl.ridmp.dto.ProbabilityTO"
+                     insert="true"
+                     update="true"
+                     column="probabilityId"
+                />
+
+        <property
+                name="authorizedDate"
+                type="java.sql.Timestamp"
+                update="true"
+                insert="true"
+                column="authorizedDate"
+                />
+
+        <many-to-one name="rewardTO"
+                     class="edu.dartmouth.ccnl.ridmp.dto.RewardTO"
+                     insert="true"
+                     update="true"
+                     column="rewardId"
+                />
+        <property
+                name="rewardId"
+                type="java.lang.Integer"
+                update="false"
+                insert="false"
+                column="rewardId"
+                />
+
+        <property
+                name="numberOfChoice"
+                type="java.lang.Integer"
+                update="true"
+                insert="true"
+                column="numberOfChoice"
+                />
+
+        <property
+                name="reversal"
+                type="java.lang.Integer"
+                update="true"
+                insert="true"
+                column="reversal"
+                />
+
+        <property
+                name="status"
+                type="java.lang.Integer"
+                update="true"
+                insert="true"
+                column="status"
+                />
+        <property
+                name="orientations"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="orientations"
+                />
+        <property
+                name="specialFrequencies"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="specialFrequencies"
+                />
+        <property
+                name="probabilities"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                column="probabilities"
+                />
+    </class>
+
+</hibernate-mapping>

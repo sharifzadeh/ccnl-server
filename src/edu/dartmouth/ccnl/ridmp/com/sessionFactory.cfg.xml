@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<session-factory>
+    <configuration-file>/edu/dartmouth/ccnl/ridmp/com/hibernate.cfg.xml</configuration-file>
+    <configuration-property>
+        <property-name>hibernate.jdbc.use_streams_for_binary</property-name>
+        <property-value>true</property-value>
+    </configuration-property>
+    <configuration-property>
+        <property-name>hibernate.cglib.use_reflection_optimizer</property-name>
+        <property-value>false</property-value>
+    </configuration-property>
+    <configuration-property>
+        <property-name>hibernate.jdbc.batch_size</property-name>
+        <property-value>0</property-value>
+    </configuration-property>
+</session-factory>
