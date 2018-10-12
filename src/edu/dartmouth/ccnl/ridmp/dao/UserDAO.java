@@ -34,8 +34,8 @@ public enum UserDAO {
 
     private static final String from = "info@ccnl.dartmouth.edu";
 
-    private static final String username = "ccnldart@gmail.com"; //requires valid gmail id
-    private static final String password = "Aab27au#"; // correct password for gmail id
+    private static final String username = "****"; //requires valid gmail id
+    private static final String password = "****"; // correct password for gmail id
 
     public void saveUserProfile(ProfileDTO profileDTO, String pin) {
 
