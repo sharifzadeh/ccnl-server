@@ -32,7 +32,7 @@ public enum UserDAO {
 
     private static final String host = "******;
 
-    private static final String from = "i******";
+    private static final String from = "******";
 
     private static final String username = "****"; //requires valid gmail id
     private static final String password = "****"; // correct password for gmail id
