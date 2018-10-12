@@ -14,37 +14,26 @@ public class TLSEmail {
 
     /**
      * Outgoing Mail (SMTP) Server
-     * requires TLS or SSL: smtp.gmail.com (use authentication)
+     * requires TLS or SSL: ****.***.*** (use authentication)
      * Use Authentication: Yes
      * Port for TLS/STARTTLS: 587
      */
     public static void main(String[] args) {
         try {
-            sendSSLMessage("test", "test", "ccnldart@gmail.com");
+            sendSSLMessage("test", "test", "*******);
         } catch (MessagingException e) {
             e.printStackTrace();
         }
         if (true)
                 return;
 
-        final String toEmail = "Amirhossein.Sharifzadeh.18@dartmouth.edu"; // can be any email id
+        final String toEmail = "********; // can be any email id
 
         Properties props = new Properties();
-//        props.put("mail.smtp.user","username");
-//        props.put("mail.smtp.host", "smtp.gmail.com");
-//        props.put("mail.smtp.port", "25");
-//        props.put("mail.debug", "true");
-//        props.put("mail.smtp.auth", "true");
-//        props.put("mail.smtp.starttls.enable","true");
-//        props.put("mail.smtp.EnableSSL.enable","true");
-//
-//        props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-//        props.setProperty("mail.smtp.socketFactory.fallback", "false");
-//        props.setProperty("mail.smtp.port", "465");
-//        props.setProperty("mail.smtp.socketFactory.port", "465");
 
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.port", "465");
+
+        props.put("mail.smtp.host", "***.****.***");
+        props.put("mail.smtp.socketFactory.port", "***");
         props.put("mail.smtp.socketFactory.class",
                 "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.auth", "true");
@@ -60,7 +49,7 @@ public class TLSEmail {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("CCNL@dartmouth.edu"));
+            message.setFrom(new InternetAddress("****@****.***"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(toEmail));
             message.setSubject("Testing Subject");
@@ -78,11 +67,11 @@ public class TLSEmail {
 
     public static void send() {
 
-        final String username = "ccnldart@gmail.com"; //requires valid gmail id
-        final String password = "Aab27au#"; // correct password for gmail id
-        final String toEmail = "Amirhossein.Sharifzadeh.18@dartmouth.edu"; // can be any email id
+        final String username = "******; //requires valid gmail id
+        final String password = "******; // correct password for gmail id
+        final String toEmail = "******"; // can be any email id
 
-        String SMTP_HOST_NAME = "smtp.gmail.com";
+        String SMTP_HOST_NAME = "****.****.****";
         String SMTP_PORT = "465";
         String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
 
@@ -125,12 +114,12 @@ public class TLSEmail {
                                String message, String from) throws MessagingException {
         boolean debug = true;
 
-        final String username = "amirsharifzadeh@gmail.com"; //requires valid gmail id
-        final String password = "Aab27au#"; // correct password for gmail id
-        final String toEmail = "Amirhossein.Sharifzadeh.18@dartmouth.edu"; // can be any email id
+        final String username = "******@****.***"; //requires valid gmail id
+        final String password = "********"; // correct password for gmail id
+        final String toEmail = "******@****.***"; // can be any email id
 
-        String SMTP_HOST_NAME = "smtp.gmail.com";
-        String SMTP_PORT = "465";
+        String SMTP_HOST_NAME = "****.***.***";
+        String SMTP_PORT = "***";
         String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
 
         Properties props = new Properties();
