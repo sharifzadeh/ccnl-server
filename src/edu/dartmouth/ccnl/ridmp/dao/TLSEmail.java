@@ -114,8 +114,8 @@ public class TLSEmail {
                                String message, String from) throws MessagingException {
         boolean debug = true;
 
-        final String username = "******@****.***"; //requires valid gmail id
-        final String password = "********"; // correct password for gmail id
+        final String username = "******@****.***"; //requires valid id
+        final String password = "********"; // correct password
         final String toEmail = "******@****.***"; // can be any email id
 
         String SMTP_HOST_NAME = "****.***.***";
